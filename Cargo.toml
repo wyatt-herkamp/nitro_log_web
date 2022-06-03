@@ -1,0 +1,19 @@
+[package]
+name = "nitro_log_web"
+version = "0.1.0"
+edition = "2021"
+description = "View Logs from for your software"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+log = { version = "0.4.17", features = ["std", "serde", "kv_unstable", "kv_unstable_serde", "kv_unstable_std"] }
+nitro_log = { path = "../nitro_log" }
+actix-web-actors = "4.1.0"
+actix-web = "4.0.1"
+actix-service = "2.0.2"
+actix = "0.13.0"
+serde_json = "1.0.81"
+anyhow = "1.0.57"
+tokio = { version = "1.18.2", features = ["sync"] }
+futures-core = "0.3.21"

@@ -1,0 +1,5 @@
+/target
+.idea
+*.iml
+frontend/**/node_modules
+actix_test/target

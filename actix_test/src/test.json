@@ -1,0 +1,22 @@
+{
+  "root_loggers": [
+    {
+      "format": {
+        "format": "[{{module({})}}] {{level(LEVEL_SETTINGS)}}: {{message({})}}",
+        "placeholders": {
+          "LEVEL_SETTINGS": {
+          },
+          "DATE_TIME": {
+            "format": "%Y-%m-%d %H:%M:%S"
+          }
+        }
+      },
+      "structure_dump": true,
+      "targets": [
+        {
+          "type": "console"
+        }
+      ]
+    }
+  ]
+}
